@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Entities build="latest" majorVersion="0" minorVersion="0" modelPersistenceProviderPackage="NeoPersistenceProviderPackage" revision="0"
+    schemaVersion="808">
+    <StyleDefinitions />
+    <Networks />
+    <PersistenceProviderPackages />
+    <Mashups />
+    <ScriptFunctionLibraries />
+    <Users />
+    <DirectoryServices />
+    <Widgets />
+    <MediaEntities />
+    <Groups />
+    <PersistenceProviders />
+    <ModelTags />
+    <LocalizationTables />
+    <Dashboards />
+    <DataShapes />
+    <Things>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="ConfiguredThing" enabled="true" homeMashup="" identifier=""
+            lastModifiedDate="2015-08-20T15:49:19.869-04:00" name="ExampleThing_1" published="false" tags="Applications:EdgeExample" thingTemplate="GenericThing"
+            valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="LOCATION" category="" description="" isLocalOnly="false"
+                        name="CurrentLocation" ordinal="1" />
+                </PropertyDefinitions>
+                <ServiceDefinitions />
+                <EventDefinitions>
+                    <EventDefinition category="" dataShape="FileSystemFile" description="" name="FileEvent" />
+                </EventDefinitions>
+                <ServiceMappings />
+                <ServiceImplementations />
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings />
+            <RemoteServiceBindings />
+            <RemoteEventBindings />
+            <AlertConfigurations>
+                <AlertDefinitions name="CurrentLocation" />
+            </AlertConfigurations>
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-09-04T11:47:14.512-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier=""
+            lastModifiedDate="2015-08-20T15:51:54.763-04:00" name="SimpleThing_1" published="false" tags="Applications:EdgeExample" thingTemplate="RemoteThing"
+            valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ThingShape>
+                <PropertyDefinitions />
+                <ServiceDefinitions />
+                <EventDefinitions />
+                <ServiceMappings />
+                <ServiceImplementations />
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings />
+            <RemoteServiceBindings />
+            <RemoteEventBindings />
+            <AlertConfigurations />
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-09-04T11:47:14.513-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="RemoteThingWithFileTransfer" enabled="true" homeMashup=""
+            identifier="SN0001" lastModifiedDate="2015-09-15T10:55:59.983-04:00" name="FirstFloorSteamSensor" published="false"
+            tags="Applications:EdgeExample;EdgeTest:Seed" thingTemplate="RemoteThingWithFileTransfer" valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="TotalFlow property description"
+                        isLocalOnly="false" name="TotalFlow" ordinal="1" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature property description"
+                        isLocalOnly="false" name="Temperature" ordinal="3" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="InletValve property description"
+                        isLocalOnly="false" name="InletValve" ordinal="5" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="FaultStatus property description"
+                        isLocalOnly="false" name="FaultStatus" ordinal="6" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="STRING" category="" description="BigGiantString property description"
+                        isLocalOnly="false" name="BigGiantString" ordinal="7" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature limit property description"
+                        isLocalOnly="false" name="TemperatureLimit" ordinal="2" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Pressure property description"
+                        isLocalOnly="false" name="Pressure" ordinal="4" />
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="Reverses the order to the supplied input string."
+                        isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ReverseString">
+                        <ResultType baseType="STRING" description="The reversed string." name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition aspect.isRequired="true" baseType="STRING" description="The input string that should be reversed."
+                                name="stringToReverse" ordinal="1" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Shutdown service description" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="Shutdown">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Example service that returns an InfoTable" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetSteamSensorReadings">
+                        <ResultType aspect.dataShape="SteamSensorReadingsPlus" baseType="INFOTABLE" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Add Two Numbers together" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="AddNumbers">
+                        <ResultType baseType="NUMBER" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition baseType="NUMBER" description="First value to add" name="a" ordinal="0" />
+                            <FieldDefinition baseType="NUMBER" description="Second value to add" name="b" ordinal="0" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="GetBigStringService service description" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetBigString">
+                        <ResultType baseType="STRING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions />
+                <ServiceMappings />
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="ReverseString">
+                        <ConfigurationTables>
+                            <ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0" />
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = stringToReverse.split("").reverse().join("");]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings>
+                <RemotePropertyBinding foldType="NONE" name="TotalFlow" pushThreshold="0.0" pushType="ALWAYS" sourceName="TotalFlow"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Temperature" pushThreshold="0.0" pushType="ALWAYS" sourceName="Temperature"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="InletValve" pushThreshold="0.0" pushType="ALWAYS" sourceName="InletValve"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="FaultStatus" pushThreshold="0.0" pushType="ALWAYS" sourceName="FaultStatus"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="BigGiantString" pushThreshold="0.0" pushType="ALWAYS" sourceName="BigGiantString"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="TemperatureLimit" pushThreshold="0.0" pushType="ALWAYS" sourceName="TemperatureLimit"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Pressure" pushThreshold="0.0" pushType="ALWAYS" sourceName="Pressure"
+                    timeout="0" />
+            </RemotePropertyBindings>
+            <RemoteServiceBindings>
+                <RemoteServiceBinding enableQueue="false" name="Shutdown" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetSteamSensorReadings" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="AddNumbers" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetBigString" sourceName="" timeout="0" />
+            </RemoteServiceBindings>
+            <RemoteEventBindings />
+            <AlertConfigurations />
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, identifier : updated&#10;"
+                    timestamp="2015-09-15T10:55:59.983-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="RemoteThingWithTunnels" enabled="true" homeMashup=""
+            identifier="" lastModifiedDate="2015-08-19T17:23:31.880-04:00" name="TunnelThing" published="false" tags="Applications:EdgeExample"
+            thingTemplate="RemoteThingWithTunnels" valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables>
+                <ConfigurationTable description="General Settings" isMultiRow="false" name="TunnelSettings" ordinal="0">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition aspect.friendlyName="Enable Tunneling" aspect.isNullable="true" baseType="BOOLEAN"
+                                description="Enable tunneling" name="enableTunneling" ordinal="0" />
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <enableTunneling>true</enableTunneling>
+                        </Row>
+                    </Rows>
+                </ConfigurationTable>
+                <ConfigurationTable description="Tunneling Destinations" isMultiRow="true" name="Tunnels" ordinal="1">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition aspect.defaultValue="1.0" aspect.friendlyName="Number of Connects" baseType="NUMBER"
+                                description="The number of connections required to establish this tunnel" name="numConnects" ordinal="4" />
+                            <FieldDefinition aspect.defaultValue="5900.0" aspect.friendlyName="Port" baseType="NUMBER"
+                                description="Port that this tunnel will connect to at the edge" name="port" ordinal="2" />
+                            <FieldDefinition aspect.defaultValue="tcp" aspect.friendlyName="Protocol" baseType="STRING"
+                                description="The protocol used over this tunnel" name="proto" ordinal="6" />
+                            <FieldDefinition aspect.defaultValue="vnc" aspect.friendlyName="Name" baseType="STRING" description="Name of the tunnel"
+                                name="name" ordinal="0" />
+                            <FieldDefinition aspect.defaultValue="127.0.0.1" aspect.friendlyName="Host" baseType="STRING"
+                                description="Host or IP that this tunnel will connect to at the edge" name="host" ordinal="1" />
+                            <FieldDefinition aspect.defaultValue="" aspect.friendlyName="Description" baseType="STRING"
+                                description="A description of the tunnel" name="description" ordinal="3" />
+                            <FieldDefinition aspect.defaultValue="" aspect.friendlyName="Application Path" baseType="STRING"
+                                description="Location of the client app that will use this tunnel" name="appUri" ordinal="5" />
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <numConnects>1.0</numConnects>
+                            <port>22.0</port>
+                            <proto><![CDATA[tcp]]></proto>
+                            <name><![CDATA[ssh]]></name>
+                            <host><![CDATA[127.0.0.1]]></host>
+                            <description />
+                            <appUri />
+                        </Row>
+                    </Rows>
+                </ConfigurationTable>
+            </ConfigurationTables>
+            <ThingShape>
+                <PropertyDefinitions />
+                <ServiceDefinitions />
+                <EventDefinitions />
+                <ServiceMappings />
+                <ServiceImplementations />
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings />
+            <RemoteServiceBindings />
+            <RemoteEventBindings />
+            <AlertConfigurations />
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-09-04T11:47:14.516-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="RemoteThingWithFileTransfer" enabled="true" homeMashup=""
+            identifier="SN0002" lastModifiedDate="2015-09-15T10:56:34.548-04:00" name="SecondFloorSteamSensor" published="false"
+            tags="Applications:EdgeExample;EdgeTest:Seed" thingTemplate="RemoteThingWithFileTransfer" valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="TotalFlow property description"
+                        isLocalOnly="false" name="TotalFlow" ordinal="1" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature property description"
+                        isLocalOnly="false" name="Temperature" ordinal="3" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="InletValve property description"
+                        isLocalOnly="false" name="InletValve" ordinal="5" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="FaultStatus property description"
+                        isLocalOnly="false" name="FaultStatus" ordinal="6" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="STRING" category="" description="BigGiantString property description"
+                        isLocalOnly="false" name="BigGiantString" ordinal="7" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature limit property description"
+                        isLocalOnly="false" name="TemperatureLimit" ordinal="2" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Pressure property description"
+                        isLocalOnly="false" name="Pressure" ordinal="4" />
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="Reverses the order to the supplied input string."
+                        isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ReverseString">
+                        <ResultType baseType="STRING" description="The reversed string." name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition aspect.isRequired="true" baseType="STRING" description="The input string that should be reversed."
+                                name="stringToReverse" ordinal="1" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Shutdown service description" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="Shutdown">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Example service that returns an InfoTable" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetSteamSensorReadings">
+                        <ResultType aspect.dataShape="SteamSensorReadingsPlus" baseType="INFOTABLE" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Add Two Numbers together" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="AddNumbers">
+                        <ResultType baseType="NUMBER" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition baseType="NUMBER" description="First value to add" name="a" ordinal="0" />
+                            <FieldDefinition baseType="NUMBER" description="Second value to add" name="b" ordinal="0" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="GetBigStringService service description" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetBigString">
+                        <ResultType baseType="STRING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions />
+                <ServiceMappings />
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="ReverseString">
+                        <ConfigurationTables>
+                            <ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0" />
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = stringToReverse.split("").reverse().join("");]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings>
+                <RemotePropertyBinding foldType="NONE" name="TotalFlow" pushThreshold="0.0" pushType="ALWAYS" sourceName="TotalFlow"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Temperature" pushThreshold="0.0" pushType="ALWAYS" sourceName="Temperature"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="InletValve" pushThreshold="0.0" pushType="ALWAYS" sourceName="InletValve"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="FaultStatus" pushThreshold="0.0" pushType="ALWAYS" sourceName="FaultStatus"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="BigGiantString" pushThreshold="0.0" pushType="ALWAYS" sourceName="BigGiantString"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="TemperatureLimit" pushThreshold="0.0" pushType="ALWAYS" sourceName="TemperatureLimit"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Pressure" pushThreshold="0.0" pushType="ALWAYS" sourceName="Pressure"
+                    timeout="0" />
+            </RemotePropertyBindings>
+            <RemoteServiceBindings>
+                <RemoteServiceBinding enableQueue="false" name="Shutdown" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetSteamSensorReadings" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="AddNumbers" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetBigString" sourceName="" timeout="0" />
+            </RemoteServiceBindings>
+            <RemoteEventBindings />
+            <AlertConfigurations />
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="header : identifier : updated, name : updated&#10;"
+                    timestamp="2015-09-15T10:56:34.548-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+        <Thing description="" documentationContent="&#10;" effectiveThingPackage="RemoteThingWithFileTransfer" enabled="true" homeMashup=""
+            identifier="SN0003" lastModifiedDate="2015-09-15T10:56:50.877-04:00" name="ThirdFloorSteamSensor" published="false"
+            tags="Applications:EdgeExample;EdgeTest:Seed" thingTemplate="RemoteThingWithFileTransfer" valueStream="">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ThingShape>
+                <PropertyDefinitions>
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="TotalFlow property description"
+                        isLocalOnly="false" name="TotalFlow" ordinal="1" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature property description"
+                        isLocalOnly="false" name="Temperature" ordinal="3" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="InletValve property description"
+                        isLocalOnly="false" name="InletValve" ordinal="5" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="BOOLEAN" category="" description="FaultStatus property description"
+                        isLocalOnly="false" name="FaultStatus" ordinal="6" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="STRING" category="" description="BigGiantString property description"
+                        isLocalOnly="false" name="BigGiantString" ordinal="7" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Temperature limit property description"
+                        isLocalOnly="false" name="TemperatureLimit" ordinal="2" />
+                    <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false"
+                        aspect.isPersistent="false" aspect.isReadOnly="false" baseType="NUMBER" category="" description="Pressure property description"
+                        isLocalOnly="false" name="Pressure" ordinal="4" />
+                </PropertyDefinitions>
+                <ServiceDefinitions>
+                    <ServiceDefinition aspect.isAsync="false" category="" description="Reverses the order to the supplied input string."
+                        isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ReverseString">
+                        <ResultType baseType="STRING" description="The reversed string." name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition aspect.isRequired="true" baseType="STRING" description="The input string that should be reversed."
+                                name="stringToReverse" ordinal="1" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Shutdown service description" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="Shutdown">
+                        <ResultType baseType="NOTHING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Example service that returns an InfoTable" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetSteamSensorReadings">
+                        <ResultType aspect.dataShape="SteamSensorReadingsPlus" baseType="INFOTABLE" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="Add Two Numbers together" isAllowOverride="false" isLocalOnly="false"
+                        isOpen="false" isPrivate="false" name="AddNumbers">
+                        <ResultType baseType="NUMBER" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions>
+                            <FieldDefinition baseType="NUMBER" description="First value to add" name="a" ordinal="0" />
+                            <FieldDefinition baseType="NUMBER" description="Second value to add" name="b" ordinal="0" />
+                        </ParameterDefinitions>
+                    </ServiceDefinition>
+                    <ServiceDefinition category="" description="GetBigStringService service description" isAllowOverride="false"
+                        isLocalOnly="false" isOpen="false" isPrivate="false" name="GetBigString">
+                        <ResultType baseType="STRING" description="" name="result" ordinal="0" />
+                        <ParameterDefinitions />
+                    </ServiceDefinition>
+                </ServiceDefinitions>
+                <EventDefinitions />
+                <ServiceMappings />
+                <ServiceImplementations>
+                    <ServiceImplementation description="" handlerName="Script" name="ReverseString">
+                        <ConfigurationTables>
+                            <ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition baseType="STRING" description="code" name="code" ordinal="0" />
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code><![CDATA[result = stringToReverse.split("").reverse().join("");]]></code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions />
+            </ThingShape>
+            <PropertyBindings />
+            <RemotePropertyBindings>
+                <RemotePropertyBinding foldType="NONE" name="TotalFlow" pushThreshold="0.0" pushType="ALWAYS" sourceName="TotalFlow"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Temperature" pushThreshold="0.0" pushType="ALWAYS" sourceName="Temperature"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="InletValve" pushThreshold="0.0" pushType="ALWAYS" sourceName="InletValve"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="FaultStatus" pushThreshold="0.0" pushType="ALWAYS" sourceName="FaultStatus"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="BigGiantString" pushThreshold="0.0" pushType="ALWAYS" sourceName="BigGiantString"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="TemperatureLimit" pushThreshold="0.0" pushType="ALWAYS" sourceName="TemperatureLimit"
+                    timeout="0" />
+                <RemotePropertyBinding foldType="NONE" name="Pressure" pushThreshold="0.0" pushType="ALWAYS" sourceName="Pressure"
+                    timeout="0" />
+            </RemotePropertyBindings>
+            <RemoteServiceBindings>
+                <RemoteServiceBinding enableQueue="false" name="Shutdown" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetSteamSensorReadings" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="AddNumbers" sourceName="" timeout="0" />
+                <RemoteServiceBinding enableQueue="false" name="GetBigString" sourceName="" timeout="0" />
+            </RemoteServiceBindings>
+            <RemoteEventBindings />
+            <AlertConfigurations />
+            <ImplementedShapes />
+            <ThingProperties />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, identifier : updated&#10;"
+                    timestamp="2015-09-15T10:56:50.877-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </Thing>
+    </Things>
+    <Logs />
+    <Authenticators />
+    <ThingPackages />
+    <ApplicationKeys>
+        <ApplicationKey clientName="" description="" documentationContent="" homeMashup="" ipWhitelist=""
+            keyId="32491397-f468-4dbc-858a-376ff92aae02" lastModifiedDate="2015-08-20T15:52:17.071-04:00" name="ExampleAppKey"
+            tags="EdgeTest:Seed;Applications:EdgeExample" userNameReference="Administrator">
+            <Owner name="Administrator" type="User" />
+            <avatar />
+            <DesignTimePermissions>
+                <Create />
+                <Read />
+                <Update />
+                <Delete />
+                <Metadata />
+            </DesignTimePermissions>
+            <RunTimePermissions />
+            <VisibilityPermissions>
+                <Visibility />
+            </VisibilityPermissions>
+            <ConfigurationTables />
+            <ConfigurationChanges>
+                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, userNameReference : updated&#10;"
+                    timestamp="2014-02-06T14:33:06.595-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2014-02-19T14:38:00.440-05:00"
+                    user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-02-19T14:39:57.884-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2014-02-19T14:42:35.692-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-02-24T10:39:43.873-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-02-27T17:13:03.027-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2014-03-04T09:58:09.648-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-03-05T14:15:58.576-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-03-06T18:17:54.778-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-03-12T23:01:30.671-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-03-06T07:38:20.211-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2014-03-12T23:10:17.670-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-09-23T16:58:17.559-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-03-13T12:02:25.853-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2014-09-23T16:58:40.101-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2014-10-04T23:34:13.553-04:00"
+                    user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2014-10-04T23:39:12.252-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2014-10-22T16:43:45.299-04:00"
+                    user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-01-22T16:20:55.887-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-02-09T22:44:03.202-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-02-19T13:05:00.324-05:00" user="DevAdmin" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-03-06T12:01:26.118-05:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-03-14T18:43:52.152-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-06-05T10:37:30.585-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="FORCEEDIT" changeReason="" timestamp="2015-06-25T08:59:18.213-04:00" user="JeffD" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-02-19T11:44:34.665-05:00" user="JeffD" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-03-10T17:17:03.963-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-06-05T11:56:16.916-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T10:57:44.633-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T11:11:01.788-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="FORCEEDIT" changeReason="" timestamp="2015-07-20T11:14:13.736-04:00" user="IanE" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T11:37:29.831-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T11:49:33.797-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T11:54:03.923-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T12:07:49.072-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-07-20T12:41:06.121-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-08-14T15:23:50.111-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-08-20T15:52:17.071-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2015-09-02T15:26:41.476-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-09-04T11:30:26.343-04:00" user="Administrator" />
+                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2015-09-04T11:47:14.521-04:00" user="Administrator" />
+            </ConfigurationChanges>
+        </ApplicationKey>
+    </ApplicationKeys>
+    <StateDefinitions />
+    <ThingTemplates />
+    <ExtensionPackages />
+    <Organizations />
+    <Menus />
+    <Resources />
+    <DataTags />
+    <ThingShapes />
+    <Subsystems />
+</Entities>
