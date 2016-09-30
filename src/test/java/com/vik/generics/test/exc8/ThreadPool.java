@@ -2,7 +2,6 @@ package com.vik.generics.test.exc8;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
 
 public class ThreadPool {
 
@@ -27,6 +26,5 @@ public class ThreadPool {
     public void execute(final Runnable runnable) {
         // executor.execute(this.createRunnable());
         executor.execute(runnable);
-        final FutureTask task;
     }
 }
